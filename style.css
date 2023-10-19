@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Mulish', sans-serif;
+}
+
+body {
+    background-color: #121214;
+    padding: 4.5rem 6.5rem;
+    display: grid;
+    justify-content: center;
+}
+
+header h1 {
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+    color: #02799d;
+}
+
+header p {
+    font-weight: 600;
+    font-size: 2rem; 
+    line-height: 2.5rem;
+    color: #E1E1E6;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 23.125rem);
+    gap: 3rem 3.75rem;
+    margin-top: 3.875rem;
+}
+
+.card {
+    background: #202024;
+    border: 0.125rem solid #323238;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.card h2 {
+    color: #E1E1E6;
+    font-weight: 900;
+    font-size: 2.25rem;
+    padding: 1.5rem 2rem 0;
+}
+
+.card p {
+    color: #c4c4cc;
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 1.5rem 2rem 2rem;
+}
+
+@media (max-width: 48rem)
+{
+    body {
+        padding: 1.5rem;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        line-height: 1rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    header h1 {
+        margin-bottom: 1rem;
+    }
+}
